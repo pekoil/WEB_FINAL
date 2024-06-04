@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"/>
+    <title>會員登入頁 - 巴哈姆特</title>
+
+</head>
+<body>
+<div class="TOP-bh">
+    <div class="TOP-data" id="BH-top-data">
+        <a href="">
+            <img src="https://i2.bahamut.com.tw/top_logo.svg" style="height:33px;">
+        </a>
+    </div>
+</div>
+<div class="container">
+    <div class="login-box">
+        <img src="https://i2.bahamut.com.tw/logo/baha_logo_horizontal.svg" style="height:63px;">
+        <form method="post" onsubmit="clearFields()">
+            <input type="text" id="userid" name="userid" placeholder="帳號或手機" autocomplete="username"  required="" maxlength="20"><br>
+            <div class="input-group">
+                <input type="password" id="pw" name="pw" placeholder="密碼" autocomplete="current-password" required="" maxlength="22">
+                <i class="fas fa-eye" id="checkEye"></i>
+                    <label><input type="checkbox"><font size="2">&nbsp;記住我&nbsp;&nbsp;&nbsp;</font></label>
+                    <label><input type="checkbox"><font size="2">&nbsp;保持登入狀態&nbsp;&nbsp;&nbsp;</font></label>
+                    <div ><a href=""><font size="1" color=#117d95>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;登入有問題嗎？</font></a>
+                    </div>
+            </div>
+            <div class="robot">
+                <div class="box">
+                    <label><input type="checkbox" style="align-self: center;">&nbsp;&nbsp;&nbsp;&nbsp;我不是機器人</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <img src="img/robot.png" style="height: 110%; float: right">
+            </div>
+
+            <input type="submit" id="loginButton" value="登入"><br>
+            <font size="2" color=#aaaaaa>還沒有帳號嗎？
+            </font><a href=""><font size="1" color=#117d95>我要註冊</font></a><br>
+
+            <div class="line-text-box"><hr><div class="caption-text"> <font size="1">使用其他帳號輕鬆登入</font></div><hr></div>
+
+            <div id="btngroup-social-login" class="btn-box">
+                <a href="" data-platform="google"><img class="share-icon icon-line" src="img/btn-icon_Google.svg"></a>
+                <a href="" data-platform="line"><img class="share-icon icon-line" src="img/share-icon_line.svg"></a>
+                <a href="" data-platform="microsoft"><img class="share-icon icon-line" src="img/btn-icon_Microsoft.svg"></a>
+                <a href="" data-platform="apple"><img class="share-icon icon-line" src="img/btn-icon_Apple.svg"></a>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="BH-footer" class="width-full"><small>本站所刊載之圖文內容等版權皆屬原廠商或原作者所有，非經同意請勿轉載<br>
+    巴 哈 姆 特 電 玩 資 訊 站 https://www.gamer.com.tw
+</small></div>
+<script src="/js/script.js"></script>
+</body>
+</html>
